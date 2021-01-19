@@ -2,7 +2,6 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 .map__wrapper {
@@ -10,7 +9,17 @@
 }
 
 .map iframe {
+  position: relative;
   width: 100vw;
   height: 100vh;
   border: none;
+}
+
+.bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: whitesmoke;
+  width: 100vw;
+  height: 11vh;
 }
