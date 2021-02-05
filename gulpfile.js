@@ -5,6 +5,7 @@ var plumber = require('gulp-plumber');
 var rename = require('gulp-rename');
 var del = require('del');
 var server = require('browser-sync').create();
+var ghPages = require("gh-pages");
 
 // css
 var sourcemap = require('gulp-sourcemaps');
@@ -147,6 +148,10 @@ gulp.task('copy', function () {
 
 gulp.task('clean', function () {
   return del('build');
+});
+
+gulp.task("deploy", function (cb) {
+  ghPages.publish("build", cb);
 });
 
 gulp.task('build', gulp.series('clean', 'copy', 'css', 'sprite', 'html', 'js', 'vendor'));

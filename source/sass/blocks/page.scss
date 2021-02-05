@@ -3,10 +3,10 @@
   min-height: 100%;
   grid-template-columns: repeat(auto-fit, minmax(320px, 100%));
   grid-template-rows: min-content 1fr min-content;
-  overflow-x: hidden;
-  position: fixed;
 }
 
 .page__main {
   width: 100%;
+  height: calc(100% - 48px);
+  overflow: hidden;
 }
