@@ -1,6 +1,7 @@
 .btn {
-  width: 65px;
-  height: 65px;
+  display: block;
+  width: 70px;
+  height: 70px;
   border: none;
   border-radius: 5px;
   background-color: transparent;
@@ -10,6 +11,7 @@
   margin-bottom: 30px;
   scroll-snap-align: center;
   outline: none;
+  padding: 30px 1px 35px;
 }
 
 .btn__dice {
@@ -17,28 +19,27 @@
     background-image: url("../img/d4.svg");
     background-position: center;
     background-repeat: no-repeat;
-    padding: 11px 16px 1px;
+    padding-top: 30px;
+    padding-bottom: 20px;
   }
 
   &--d6 {
     background-image: url("../img/d6.svg");
     background-position: center;
     background-repeat: no-repeat;
-    padding: 9px 9px 1px 0;
+    padding: 21px 15px 22px 6px;
   }
 
   &--d8 {
     background-image: url("../img/d8.svg");
     background-position: center;
     background-repeat: no-repeat;
-    padding: 2px 0 3px;
   }
 
   &--d10 {
     background-image: url("../img/d10.svg");
     background-position: center;
     background-repeat: no-repeat;
-    padding-bottom: 3px;
   }
 
   &--d12 {
@@ -53,7 +54,6 @@
     background-position: center;
     background-repeat: no-repeat;
     color: $color-black;
-    padding: 4px 0 1px 1px;
   }
 
   &--d100 {

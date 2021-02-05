@@ -3,13 +3,16 @@
   display: flex;
   justify-content: center;
   right: 55px;
-  bottom: 16px;
+  bottom: 14px;
   width: 340px;
   height: 70px;
   z-index: 100000;
   overflow-x: hidden;
 
-  @media (max-width: 400px) {
-    right: 16px;
+  @media (max-width: 430px) {
+    width: 100%;
+    min-width: 350px;
+    right: 0;
+    justify-content: space-around;
   }
 }
