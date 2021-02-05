@@ -4,8 +4,9 @@ import {DiceRoller} from 'rpg-dice-roller';
 
 const dices = document.querySelector('.dices');
 
-const text = document.querySelector('#log')
-const container = document.querySelector('.log')
+const text = document.querySelector('#log');
+const container = document.querySelector('.log');
+const currentText = document.querySelector(`#current`);
 let rollLog = []
 
 const setText = () => {
@@ -29,6 +30,7 @@ const rollThisDiceNow = (dice, text) => {
     rollLog.push(`${text}: ${roller.total}`);
   }
   localStorage.setItem(`Log`, JSON.stringify(rollLog));
+  currentText.textContent = roller.total;
   setText()
 };
 
@@ -58,4 +60,4 @@ const listenToMyDice = (evt) => {
   }
 }
 
-document.addEventListener('click', listenToMyDice);
+dices.addEventListener('click', listenToMyDice);

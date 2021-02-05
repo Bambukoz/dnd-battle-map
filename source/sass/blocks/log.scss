@@ -1,11 +1,12 @@
 .log {
-  width: 120px;
-  height: 100px;
+  width: 100px;
+  height: 70px;
   border: 2px solid $color-black;
   border-radius: 5px;
   overflow: scroll;
   padding: 11px;
   margin-right: 10px;
+  font-size: 15px;
   background-color: $color-white-05;
 }
 

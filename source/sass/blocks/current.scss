@@ -1,0 +1,17 @@
+.current {
+  width: 120px;
+  height: 70px;
+  background-color: $color-white-05;
+  border: 2px solid $color-black;
+  border-radius: 5px;
+  padding: 10px 1px;
+  margin-right: 10px;
+}
+
+.current p {
+  @include style-reset;
+  font-size: 60px;
+  line-height: 47px;
+  font-family: $font-family-secondary;
+  text-align: center;
+}

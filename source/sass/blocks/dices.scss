@@ -1,11 +1,15 @@
 .dices {
   width: 100px;
-  height: 100px;
+  height: 70px;
   overflow: scroll;
   background-color: $color-white-05;
   border: 2px solid $color-black;
   border-radius: 5px;
-  padding: 12px 11px 12px 16px;
+  padding: 1px 11px 12px 16px;
   scroll-behavior: smooth;
   scroll-snap-type: y mandatory;
+
+  @media (max-width: 400px) {
+    background-color: $color-white;
+  }
 }
