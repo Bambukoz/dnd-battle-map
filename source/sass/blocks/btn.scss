@@ -1,0 +1,62 @@
+.btn {
+  width: 60px;
+  height: 60px;
+  border: none;
+  border-radius: 5px;
+  background-color: transparent;
+  color: $color-white;
+  font-size: 12px;
+  font-family: $font-family-secondary;
+  margin-bottom: 5px;
+}
+
+.btn__dice {
+  &--d4 {
+    background-image: url("../img/d4.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 11px 16px 1px;
+  }
+
+  &--d6 {
+    background-image: url("../img/d6.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 9px 9px 1px 0;
+  }
+
+  &--d8 {
+    background-image: url("../img/d8.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 2px 0 3px;
+  }
+
+  &--d10 {
+    background-image: url("../img/d10.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-bottom: 3px;
+  }
+
+  &--d12 {
+    background-image: url("../img/d12.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    color: $color-black;
+  }
+
+  &--d20 {
+    background-image: url("../img/d20.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    color: $color-black;
+    padding: 4px 0 1px 1px;
+  }
+
+  &--d100 {
+    background-image: url("../img/d100.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}

@@ -1,0 +1,16 @@
+.log {
+  width: 120px;
+  height: 100px;
+  border: 3px solid $color-black;
+  border-radius: 5px;
+  overflow: scroll;
+  padding: 10px;
+  margin-right: 10px;
+  background-color: $color-white-05;
+}
+
+.log__text {
+  @include style-reset;
+  width: 78px;
+  white-space: pre-wrap;
+}
