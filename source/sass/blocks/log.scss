@@ -4,7 +4,7 @@
   border: 2px solid $color-black;
   border-radius: 5px;
   overflow: scroll;
-  padding: 11px;
+  padding: 10px 1px 10px 10px;
   margin-right: 10px;
   font-size: 15px;
   background-color: $color-white-05;
@@ -13,6 +13,6 @@
 
 .log__text {
   @include style-reset;
-  width: 78px;
+  width: 75px;
   white-space: pre-wrap;
 }
