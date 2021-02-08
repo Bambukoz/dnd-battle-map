@@ -3,7 +3,7 @@
   display: flex;
   justify-content: center;
   right: 55px;
-  bottom: 14px;
+  bottom: 15px;
   width: 340px;
   height: 70px;
   z-index: 100000;
@@ -13,6 +13,11 @@
     width: 100%;
     min-width: 350px;
     right: 0;
+    bottom: 0;
     justify-content: space-around;
+  }
+
+  &::-webkit-scrollbar {
+    display: none;
   }
 }

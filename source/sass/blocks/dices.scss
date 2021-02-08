@@ -8,12 +8,16 @@
   background-color: $color-white-05;
   border: 2px solid $color-black;
   border-radius: 5px;
-  padding: 1px;
+  padding: 10px;
   scroll-behavior: smooth;
   scroll-snap-type: y mandatory;
-  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
 
   @media (max-width: 430px) {
     background-color: $color-white;
+  }
+
+  &::-webkit-scrollbar {
+    display: none;
   }
 }

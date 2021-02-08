@@ -9,6 +9,10 @@
   font-size: 15px;
   background-color: $color-white-05;
   overflow-x: hidden;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 .log__text {
