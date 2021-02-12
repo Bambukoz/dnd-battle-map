@@ -1,4 +1,5 @@
 .rolling {
+  @include list-reset;
   position: fixed;
   display: flex;
   justify-content: center;

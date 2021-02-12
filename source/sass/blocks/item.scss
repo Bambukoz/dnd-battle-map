@@ -1,0 +1,70 @@
+.item {
+  @include style-reset;
+  width: 100px;
+  overflow: scroll;
+  font-size: 15px;
+  background-color: $color-white-05;
+  overflow-x: hidden;
+  height: 70px;
+  border: 2px solid $color-black;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 10px;
+
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+  -webkit-overflow-scrolling: touch;
+
+  &--log {
+    padding: 1px;
+  }
+
+  &--current {
+    width: 120px;
+    padding: 10px 1px;
+    overflow-x: hidden;
+    cursor: default;
+  }
+
+  &--dices {
+    padding: 10px;
+
+    @media (max-width: 430px) {
+      background-color: $color-white;
+    }
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.item p {
+  width: 69px;
+  white-space: pre-wrap;
+  margin: 8px;
+}
+
+.item--current p {
+  @include style-reset;
+  font-size: 53px;
+  line-height: 45px;
+  font-family: $font-family-secondary;
+  text-align: center;
+}
+
+.rotate {
+  animation: 1.5s ease-in-out spin;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(4320deg);
+  }
+}
